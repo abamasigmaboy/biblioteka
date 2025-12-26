@@ -1,8 +1,4 @@
-﻿using System;
 using MatrixLib;
-class Program
-{
-    static void Main()
     {
         int n = 7;
         double[,] a = new double[n, n];
@@ -16,7 +12,7 @@ class Program
         Console.WriteLine("\nПосле обмена min и max на главной диагонали:");
         PrintMatrix(a);
     }
-    static void PrintMatrix(double[,] a)
+    public PrintMatrix(double[,] a)
     {
         int n0 = a.GetLength(0);
         int n1 = a.GetLength(1);
@@ -27,4 +23,4 @@ class Program
             Console.WriteLine();
         }
     }
-}
+
